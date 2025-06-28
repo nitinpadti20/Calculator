@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34; /* Dark background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#calculator {
+    background-color: #3a3f47; /* Slightly lighter dark for calculator body */
+    border-radius: 10px;
+    max-width: 400px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 3.5rem;
+    text-align: right;
+    border: none;
+    background-color: #21252b; /* Even darker for display */
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    background-color: #555b66; /* Grey for regular buttons */
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #6a707c;
+}
+
+button:active {
+    background-color: #7f8691;
+}
+
+.operator-btn {
+    background-color: #61afef; /* Blue for operator buttons */
+    color: #ffffff;
+}
+
+.operator-btn:hover {
+    background-color: #7cbef2;
+}
+
+.operator-btn:active {
+    background-color: #93ccf5;
+}
